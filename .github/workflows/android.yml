@@ -8,6 +8,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
 
@@ -24,7 +25,8 @@ jobs:
 
       - name: Extract project
         run: unzip -o IndriveGacorAssistant_V4_Peta_Grafik.zip -d .
-              - name: Fix JVM target
+
+      - name: Fix JVM target
         run: |
           python3 - <<'PY'
           from pathlib import Path
